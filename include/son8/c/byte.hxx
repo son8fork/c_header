@@ -5,5 +5,5 @@
 #include "libc.hxx"
 
 namespace c {
-    using namespace std;
+    using std::strlen;
 }

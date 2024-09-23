@@ -9,5 +9,6 @@
 #include "libc.hxx"
 
 namespace c {
-    using namespace std;
+    using std::rand;
+    using std::srand;
 }

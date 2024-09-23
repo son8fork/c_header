@@ -1,11 +1,13 @@
 #pragma once
 
-#include <cinttypes>
+//#include <cinttypes>
 #include <climits>
 #include <cstddef>
 #include <cstdint>
 #include <cstdlib>
 
 namespace c {
-    using namespace std;
+    using std::size_t;
+    using std::abort;
+    using std::exit;
 }
