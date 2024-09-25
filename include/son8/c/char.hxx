@@ -1,10 +1,71 @@
 #pragma once
 
+#include <cctype>
+#include <cuchar>
 #include <cwchar>
 #include <cwctype>
 
 #include "libc.hxx"
 
 namespace c {
-    using std::wcslen;
+    // ctype
+    using std::isalnum;
+    using std::isalpha;
+    using std::isblank;
+    using std::iscntrl;
+    using std::isdigit;
+    using std::isgraph;
+    using std::islower;
+    using std::isprint;
+    using std::ispunct;
+    using std::isspace;
+    using std::isupper;
+    using std::isxdigit;
+    using std::tolower;
+    using std::toupper;
+    // uchar
+    using std::mbstate_t;
+    using std::c16rtomb;
+    using std::c32rtomb;
+    using std::mbrtoc16;
+    using std::mbrtoc32;
+    // libc.hxx->stdlib
+    using std::atof;
+    using std::atoi;
+    using std::atol;
+    using std::atoll;
+    using std::mblen;
+    using std::mbstowcs;
+    using std::mbtowc;
+    using std::strtod;
+    using std::strtof;
+    using std::strtol;
+    using std::strtold;
+    using std::strtoll;
+    using std::strtoul;
+    using std::strtoull;
+    using std::wcstombs;
+    using std::wctomb;
+    // wtype
+    using std::wctrans_t;
+    using std::wctype_t;
+    using std::wint_t;
+    using std::iswalnum;
+    using std::iswalpha;
+    using std::iswblank;
+    using std::iswcntrl;
+    using std::iswdigit;
+    using std::iswgraph;
+    using std::iswctype;
+    using std::iswlower;
+    using std::iswprint;
+    using std::iswpunct;
+    using std::iswspace;
+    using std::iswupper;
+    using std::iswxdigit;
+    using std::towctrans;
+    using std::towlower;
+    using std::towupper;
+    using std::wctrans;
+    using std::wctype;
 }

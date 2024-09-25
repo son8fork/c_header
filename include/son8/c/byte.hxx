@@ -1,9 +1,12 @@
 #pragma once
 
-#include <cstring>
-
 #include "libc.hxx"
 
 namespace c {
-    using std::strlen;
+    // libc.hxx->stdlib
+    using std::aligned_alloc;
+    using std::calloc;
+    using std::free;
+    using std::malloc;
+    using std::realloc;
 }

@@ -5,6 +5,7 @@
 #include "libc.hxx"
 
 namespace c {
+    // time
     using std::clock_t;
     using std::clock;
     using std::time_t;
@@ -16,7 +17,6 @@ namespace c {
     using std::tm;
     using std::asctime;
     using std::strftime;
-    // uses more then one type in arguments and return
     using std::gmtime;
     using std::localtime;
     using std::mktime;
