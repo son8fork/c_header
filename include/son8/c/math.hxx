@@ -1,5 +1,9 @@
 #pragma once
 
+/*
+    Math C related functionality
+*/
+
 #include <cfenv>
 #include <cfloat>
 //#include <cmath>
@@ -21,6 +25,9 @@ namespace c {
     using std::fesetround;
     using std::fetestexcept;
     using std::feupdateenv;
+    // libc.hxx->inttypes
+    using std::imaxabs;
+    using std::imaxdiv;
     // libc.hxx->stdlib
     using std::div_t;
     using std::ldiv_t;

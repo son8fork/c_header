@@ -7,5 +7,5 @@
 #include "c/exec.hxx"
 #include "c/file.hxx"
 #include "c/math.hxx"
-#include "c/time.hxx"
 #include "c/util.hxx"
+#include "c/wide.hxx"

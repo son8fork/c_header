@@ -1,5 +1,9 @@
 #pragma once
 
+/*
+    Execution C related functionality
+*/
+
 #include <csetjmp>
 #include <csignal>
 
