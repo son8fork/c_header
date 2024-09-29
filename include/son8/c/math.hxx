@@ -12,6 +12,7 @@
 
 namespace c {
     // fenv
+    // -- C++11
     using std::fenv_t;
     using std::fexcept_t;
     using std::fegetenv;
@@ -277,16 +278,18 @@ namespace c {
     // -- C++20
     //using std::lerp;
     // libc.hxx->inttypes
+    // -- C++11
     using std::imaxabs;
     using std::imaxdiv;
     // libc.hxx->stdlib
     using std::div_t;
     using std::ldiv_t;
-    using std::lldiv_t;
     using std::abs;
     using std::div;
     using std::labs;
     using std::ldiv;
+    // -- C++11
+    using std::lldiv_t;
     using std::llabs;
     using std::lldiv;
 }

@@ -20,9 +20,10 @@ namespace c {
     // libc.hxx->stdlib
     using std::abort;
     using std::atexit;
-    using std::at_quick_exit;
     using std::exit;
-    using std::quick_exit;
     using std::system;
+    // -- C++11
+    using std::at_quick_exit;
+    using std::quick_exit;
     using std::_Exit;
 }

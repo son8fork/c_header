@@ -12,12 +12,15 @@
 
 namespace c {
     // uchar
-    // -- C++11
     using std::mbstate_t;
+    // -- C++11
     using std::c16rtomb;
     using std::c32rtomb;
     using std::mbrtoc16;
     using std::mbrtoc32;
+    // -- C++20
+    //using std::c8rtomb;
+    //using std::mbrtoc8;
     // wchar
     using std::btowc;
     using std::fgetwc;
@@ -85,7 +88,6 @@ namespace c {
     using std::wint_t;
     using std::iswalnum;
     using std::iswalpha;
-    using std::iswblank;
     using std::iswcntrl;
     using std::iswdigit;
     using std::iswgraph;
@@ -101,7 +103,10 @@ namespace c {
     using std::towupper;
     using std::wctrans;
     using std::wctype;
+    // -- C++11
+    using std::iswblank;
     // libc.hxx->inttypes
+    // -- C++11
     using std::wcstoimax;
     using std::wcstoumax;
     // libc.hxx->stdlib

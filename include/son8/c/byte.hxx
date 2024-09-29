@@ -16,9 +16,10 @@ namespace c {
     using std::memmove;
     using std::memset;
     // libc.hxx->stdlib
-    using std::aligned_alloc;
     using std::calloc;
     using std::free;
     using std::malloc;
     using std::realloc;
+    // -- C++17
+    using std::aligned_alloc;
 }

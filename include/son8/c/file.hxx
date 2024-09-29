@@ -44,17 +44,21 @@ namespace c {
     using std::scanf;
     using std::setbuf;
     using std::setvbuf;
-    using std::snprintf;
     using std::sprintf;
     using std::sscanf;
     using std::tmpfile;
     using std::tmpnam;
     using std::ungetc;
     using std::vfprintf;
-    using std::vfscanf;
     using std::vprintf;
+    using std::vsprintf;
+    // -- C++11
+    using std::snprintf;
+    using std::vfscanf;
     using std::vscanf;
     using std::vsnprintf;
-    using std::vsprintf;
     using std::vsscanf;
+
+    // -- C++11 deprecated, C++14 removed
+    //using std::gets;
 }

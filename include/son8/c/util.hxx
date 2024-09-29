@@ -21,7 +21,6 @@ namespace c {
     // time
     using std::clock_t;
     using std::time_t;
-    using std::timespec;
     using std::tm;
     using std::asctime;
     using std::clock;
@@ -31,8 +30,10 @@ namespace c {
     using std::localtime;
     using std::mktime;
     using std::time;
-    using std::timespec_get;
     using std::strftime;
+    // -- C++17
+    using std::timespec;
+    using std::timespec_get;
     // libc.hxx->stdlib
     using std::bsearch;
     using std::qsort;

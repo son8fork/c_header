@@ -16,13 +16,16 @@ namespace c {
     // -- C++11
     using std::imaxdiv_t;
     // stddef
-    using std::byte;
-    using std::max_align_t;
-    using std::nullptr_t;
     using std::ptrdiff_t;
     using std::size_t;
+    // -- C++11
+    using std::max_align_t;
+    using std::nullptr_t;
+    // -- C++17
+    using std::byte;
     using std::to_integer;
     // stdint
+    // -- C++11
     using std::int16_t;
     using std::int32_t;
     using std::int64_t;

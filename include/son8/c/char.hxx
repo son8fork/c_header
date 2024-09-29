@@ -45,19 +45,21 @@ namespace c {
     using std::strtok;
     using std::strxfrm;
     // libc.hxx->inttypes
+    // -- C++11
     using std::strtoimax;
     using std::strtoumax;
     // libc.hxx->stdlib
     using std::atof;
     using std::atoi;
     using std::atol;
-    using std::atoll;
     using std::mblen;
     using std::strtod;
     using std::strtof;
     using std::strtol;
     using std::strtold;
-    using std::strtoll;
     using std::strtoul;
+    // -- C++11
+    using std::atoll;
+    using std::strtoll;
     using std::strtoull;
 }
