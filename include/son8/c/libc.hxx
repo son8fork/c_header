@@ -4,6 +4,10 @@
     Core C related functionality
 */
 
+#ifndef __cplusplus
+#error "son8::c_header library interface requires C++"
+#endif
+
 #include <cassert>
 #include <cinttypes>
 #include <climits>

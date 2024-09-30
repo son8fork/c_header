@@ -1,4 +1,5 @@
 # ignore folders that start with a dot
 .*/
-# ignore temporary files
+# ignore temporary files and folders
 temp.*
+temp/

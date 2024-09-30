@@ -4,14 +4,19 @@
     Utility (other) C related functionality
 */
 
+#include "libc.hxx"
+
 #include <cerrno>
 #include <clocale>
 #include <cstdarg>
 #include <ctime>
 
-#include "libc.hxx"
-
 namespace c {
+    // libc.hxx->stdlib
+    using std::bsearch;
+    using std::qsort;
+    using std::rand;
+    using std::srand;
     // locale
     using std::lconv;
     using std::localeconv;
@@ -34,9 +39,4 @@ namespace c {
     // -- C++17
     using std::timespec;
     using std::timespec_get;
-    // libc.hxx->stdlib
-    using std::bsearch;
-    using std::qsort;
-    using std::rand;
-    using std::srand;
 }

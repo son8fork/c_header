@@ -4,9 +4,9 @@
     File C related functionality
 */
 
-#include <cstdio>
-
 #include "libc.hxx"
+
+#include <cstdio>
 
 namespace c {
     // stdio
@@ -58,7 +58,6 @@ namespace c {
     using std::vscanf;
     using std::vsnprintf;
     using std::vsscanf;
-
     // -- C++11 deprecated, C++14 removed
     //using std::gets;
 }

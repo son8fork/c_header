@@ -4,13 +4,22 @@
     Wide character C related functionality
 */
 
+#include "libc.hxx"
+
 #include <cuchar>
 #include <cwchar>
 #include <cwctype>
 
-#include "libc.hxx"
-
 namespace c {
+    // libc.hxx->inttypes
+    // -- C++11
+    using std::wcstoimax;
+    using std::wcstoumax;
+    // libc.hxx->stdlib
+    using std::mbstowcs;
+    using std::mbtowc;
+    using std::wcstombs;
+    using std::wctomb;
     // uchar
     using std::mbstate_t;
     // -- C++11
@@ -105,13 +114,4 @@ namespace c {
     using std::wctype;
     // -- C++11
     using std::iswblank;
-    // libc.hxx->inttypes
-    // -- C++11
-    using std::wcstoimax;
-    using std::wcstoumax;
-    // libc.hxx->stdlib
-    using std::mbstowcs;
-    using std::mbtowc;
-    using std::wcstombs;
-    using std::wctomb;
 }

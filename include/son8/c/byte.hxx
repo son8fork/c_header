@@ -4,17 +4,11 @@
     Memory C related functionality
 */
 
-#include <cstring>
-
 #include "libc.hxx"
 
+#include <cstring>
+
 namespace c {
-    // string
-    using std::memchr;
-    using std::memcmp;
-    using std::memcpy;
-    using std::memmove;
-    using std::memset;
     // libc.hxx->stdlib
     using std::calloc;
     using std::free;
@@ -22,4 +16,10 @@ namespace c {
     using std::realloc;
     // -- C++17
     using std::aligned_alloc;
+    // string
+    using std::memchr;
+    using std::memcmp;
+    using std::memcpy;
+    using std::memmove;
+    using std::memset;
 }

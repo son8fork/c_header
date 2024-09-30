@@ -4,13 +4,28 @@
     Math C related functionality
 */
 
+#include "libc.hxx"
+
 #include <cfenv>
 #include <cfloat>
 #include <cmath>
 
-#include "libc.hxx"
-
 namespace c {
+    // libc.hxx->inttypes
+    // -- C++11
+    using std::imaxabs;
+    using std::imaxdiv;
+    // libc.hxx->stdlib
+    using std::div_t;
+    using std::ldiv_t;
+    using std::abs;
+    using std::div;
+    using std::labs;
+    using std::ldiv;
+    // -- C++11
+    using std::lldiv_t;
+    using std::llabs;
+    using std::lldiv;
     // fenv
     // -- C++11
     using std::fenv_t;
@@ -277,19 +292,4 @@ namespace c {
     using std::sph_neumannl;
     // -- C++20
     //using std::lerp;
-    // libc.hxx->inttypes
-    // -- C++11
-    using std::imaxabs;
-    using std::imaxdiv;
-    // libc.hxx->stdlib
-    using std::div_t;
-    using std::ldiv_t;
-    using std::abs;
-    using std::div;
-    using std::labs;
-    using std::ldiv;
-    // -- C++11
-    using std::lldiv_t;
-    using std::llabs;
-    using std::lldiv;
 }

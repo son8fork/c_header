@@ -4,12 +4,30 @@
     Character C related functionality
 */
 
+#include "libc.hxx"
+
 #include <cctype>
 #include <cstring>
 
-#include "libc.hxx"
-
 namespace c {
+    // libc.hxx->inttypes
+    // -- C++11
+    using std::strtoimax;
+    using std::strtoumax;
+    // libc.hxx->stdlib
+    using std::atof;
+    using std::atoi;
+    using std::atol;
+    using std::mblen;
+    using std::strtod;
+    using std::strtof;
+    using std::strtol;
+    using std::strtold;
+    using std::strtoul;
+    // -- C++11
+    using std::atoll;
+    using std::strtoll;
+    using std::strtoull;
     // ctype
     using std::isalnum;
     using std::isalpha;
@@ -44,22 +62,4 @@ namespace c {
     using std::strstr;
     using std::strtok;
     using std::strxfrm;
-    // libc.hxx->inttypes
-    // -- C++11
-    using std::strtoimax;
-    using std::strtoumax;
-    // libc.hxx->stdlib
-    using std::atof;
-    using std::atoi;
-    using std::atol;
-    using std::mblen;
-    using std::strtod;
-    using std::strtof;
-    using std::strtol;
-    using std::strtold;
-    using std::strtoul;
-    // -- C++11
-    using std::atoll;
-    using std::strtoll;
-    using std::strtoull;
 }
