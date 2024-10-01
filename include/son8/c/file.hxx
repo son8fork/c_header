@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_FILE_HXX
+#define SON8_C_FILE_HXX
 
 /*
     File C related functionality
@@ -8,7 +10,7 @@
 
 #include <cstdio>
 
-namespace c {
+namespace son8::c {
     // stdio
     using std::FILE;
     using std::fpos_t;
@@ -61,3 +63,5 @@ namespace c {
     // -- C++11 deprecated, C++14 removed
     //using std::gets;
 }
+
+#endif// SON8_C_FILE_HXX

@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_CHAR_HXX
+#define SON8_C_CHAR_HXX
 
 /*
     Character C related functionality
@@ -9,7 +11,7 @@
 #include <cctype>
 #include <cstring>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->inttypes
     // -- C++11
     using std::strtoimax;
@@ -63,3 +65,5 @@ namespace c {
     using std::strtok;
     using std::strxfrm;
 }
+
+#endif// SON8_C_CHAR_HXX

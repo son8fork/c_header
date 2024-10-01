@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_UTIL_HXX
+#define SON8_C_UTIL_HXX
 
 /*
     Utility (other) C related functionality
@@ -11,7 +13,7 @@
 #include <cstdarg>
 #include <ctime>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->stdlib
     using std::bsearch;
     using std::qsort;
@@ -40,3 +42,5 @@ namespace c {
     using std::timespec;
     using std::timespec_get;
 }
+
+#endif// SON8_C_UTIL_HXX

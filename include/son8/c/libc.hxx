@@ -1,7 +1,9 @@
 #pragma once
+#ifndef SON8_C_LIBC_HXX
+#define SON8_C_LIBC_HXX
 
 /*
-    Core C related functionality
+    Base C related functionality
 */
 
 #ifndef __cplusplus
@@ -15,7 +17,7 @@
 #include <cstdint>
 #include <cstdlib>
 
-namespace c {
+namespace son8::c {
     // inttypes
     // -- C++11
     using std::imaxdiv_t;
@@ -59,3 +61,5 @@ namespace c {
     using std::uint_least64_t;
     using std::uint_least8_t;
 }
+
+#endif// SON8_C_LIBC_HXX

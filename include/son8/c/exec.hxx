@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_EXEC_HXX
+#define SON8_C_EXEC_HXX
 
 /*
     Execution C related functionality
@@ -9,7 +11,7 @@
 #include <csetjmp>
 #include <csignal>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->stdlib
     using std::abort;
     using std::atexit;
@@ -27,3 +29,5 @@ namespace c {
     using std::signal;
     using std::raise;
 }
+
+#endif// SON8_C_EXEC_HXX

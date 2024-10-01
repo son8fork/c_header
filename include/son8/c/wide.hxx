@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_WIDE_HXX
+#define SON8_C_WIDE_HXX
 
 /*
     Wide character C related functionality
@@ -10,7 +12,7 @@
 #include <cwchar>
 #include <cwctype>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->inttypes
     // -- C++11
     using std::wcstoimax;
@@ -115,3 +117,5 @@ namespace c {
     // -- C++11
     using std::iswblank;
 }
+
+#endif// SON8_C_WIDE_HXX

@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_BYTE_HXX
+#define SON8_C_BYTE_HXX
 
 /*
     Memory C related functionality
@@ -8,7 +10,7 @@
 
 #include <cstring>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->stdlib
     using std::calloc;
     using std::free;
@@ -23,3 +25,5 @@ namespace c {
     using std::memmove;
     using std::memset;
 }
+
+#endif// SON8_C_BYTE_HXX

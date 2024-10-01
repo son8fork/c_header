@@ -1,4 +1,6 @@
 #pragma once
+#ifndef SON8_C_MATH_HXX
+#define SON8_C_MATH_HXX
 
 /*
     Math C related functionality
@@ -10,7 +12,7 @@
 #include <cfloat>
 #include <cmath>
 
-namespace c {
+namespace son8::c {
     // libc.hxx->inttypes
     // -- C++11
     using std::imaxabs;
@@ -293,3 +295,5 @@ namespace c {
     // -- C++20
     //using std::lerp;
 }
+
+#endif// SON8_C_MATH_HXX
