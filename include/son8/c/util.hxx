@@ -8,7 +8,6 @@
 
 #include "base.hxx"
 
-#include <cerrno>
 #include <clocale>
 #include <cstdarg>
 #include <ctime>

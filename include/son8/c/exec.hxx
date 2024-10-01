@@ -8,6 +8,7 @@
 
 #include "base.hxx"
 
+#include <cerrno>
 #include <csetjmp>
 #include <csignal>
 
