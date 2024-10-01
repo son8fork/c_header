@@ -6,18 +6,18 @@
     Wide character C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cuchar>
 #include <cwchar>
 #include <cwctype>
 
 namespace son8::c {
-    // libc.hxx->inttypes
+    // base.hxx->inttypes
     // -- C++11
     using std::wcstoimax;
     using std::wcstoumax;
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::mbstowcs;
     using std::mbtowc;
     using std::wcstombs;

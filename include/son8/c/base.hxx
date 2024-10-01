@@ -1,6 +1,6 @@
 #pragma once
-#ifndef SON8_C_LIBC_HXX
-#define SON8_C_LIBC_HXX
+#ifndef SON8_C_BASE_HXX
+#define SON8_C_BASE_HXX
 
 /*
     Base C related functionality
@@ -62,4 +62,4 @@ namespace son8::c {
     using std::uint_least8_t;
 }
 
-#endif// SON8_C_LIBC_HXX
+#endif// SON8_C_BASE_HXX

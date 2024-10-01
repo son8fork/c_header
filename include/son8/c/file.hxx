@@ -6,7 +6,7 @@
     File C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cstdio>
 

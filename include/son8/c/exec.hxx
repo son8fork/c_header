@@ -6,13 +6,13 @@
     Execution C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <csetjmp>
 #include <csignal>
 
 namespace son8::c {
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::abort;
     using std::atexit;
     using std::exit;

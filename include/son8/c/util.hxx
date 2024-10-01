@@ -6,7 +6,7 @@
     Utility (other) C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cerrno>
 #include <clocale>
@@ -14,7 +14,7 @@
 #include <ctime>
 
 namespace son8::c {
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::bsearch;
     using std::qsort;
     using std::rand;

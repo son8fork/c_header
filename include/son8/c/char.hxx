@@ -6,17 +6,17 @@
     Character C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cctype>
 #include <cstring>
 
 namespace son8::c {
-    // libc.hxx->inttypes
+    // base.hxx->inttypes
     // -- C++11
     using std::strtoimax;
     using std::strtoumax;
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::atof;
     using std::atoi;
     using std::atol;

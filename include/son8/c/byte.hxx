@@ -6,12 +6,12 @@
     Memory C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cstring>
 
 namespace son8::c {
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::calloc;
     using std::free;
     using std::malloc;

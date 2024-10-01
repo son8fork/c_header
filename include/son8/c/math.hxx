@@ -6,18 +6,18 @@
     Math C related functionality
 */
 
-#include "libc.hxx"
+#include "base.hxx"
 
 #include <cfenv>
 #include <cfloat>
 #include <cmath>
 
 namespace son8::c {
-    // libc.hxx->inttypes
+    // base.hxx->inttypes
     // -- C++11
     using std::imaxabs;
     using std::imaxdiv;
-    // libc.hxx->stdlib
+    // base.hxx->stdlib
     using std::div_t;
     using std::ldiv_t;
     using std::abs;
