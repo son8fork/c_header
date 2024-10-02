@@ -294,6 +294,8 @@ namespace son8::c {
     using std::sph_neumannl;
     // -- C++20
     //using std::lerp;
-}
+} // namespace son8::c
 
-#endif// SON8_C_MATH_HXX
+#endif//SON8_C_MATH_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

@@ -11,4 +11,6 @@
 #include "c/util.hxx"
 #include "c/wide.hxx"
 
-#endif// SON8_CALL_HXX
+#endif//SON8_CALL_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

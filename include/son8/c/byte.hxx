@@ -24,6 +24,8 @@ namespace son8::c {
     using std::memcpy;
     using std::memmove;
     using std::memset;
-}
+} // namespace son8::c
 
-#endif// SON8_C_BYTE_HXX
+#endif//SON8_C_BYTE_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

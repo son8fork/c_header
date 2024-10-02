@@ -40,6 +40,8 @@ namespace son8::c {
     // -- C++17
     using std::timespec;
     using std::timespec_get;
-}
+} // namespace son8::c
 
-#endif// SON8_C_UTIL_HXX
+#endif//SON8_C_UTIL_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

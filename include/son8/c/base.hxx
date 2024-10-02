@@ -60,6 +60,8 @@ namespace son8::c {
     using std::uint_least32_t;
     using std::uint_least64_t;
     using std::uint_least8_t;
-}
+} // namespace son8::c
 
-#endif// SON8_C_BASE_HXX
+#endif//SON8_C_BASE_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

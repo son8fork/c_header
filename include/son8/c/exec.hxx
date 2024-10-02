@@ -29,6 +29,8 @@ namespace son8::c {
     using std::sig_atomic_t;
     using std::signal;
     using std::raise;
-}
+} // namespace son8::c
 
-#endif// SON8_C_EXEC_HXX
+#endif//SON8_C_EXEC_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

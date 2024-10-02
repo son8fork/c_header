@@ -116,6 +116,8 @@ namespace son8::c {
     using std::wctype;
     // -- C++11
     using std::iswblank;
-}
+} // namespace son8::c
 
-#endif// SON8_C_WIDE_HXX
+#endif//SON8_C_WIDE_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/

@@ -62,6 +62,8 @@ namespace son8::c {
     using std::vsscanf;
     // -- C++11 deprecated, C++14 removed
     //using std::gets;
-}
+} // namespace son8::c
 
-#endif// SON8_C_FILE_HXX
+#endif//SON8_C_FILE_HXX
+
+/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
