@@ -1,6 +1,6 @@
 #pragma once
-#ifndef SON8_CALL_HXX
-#define SON8_CALL_HXX
+#ifndef SON8_C_HXX
+#define SON8_C_HXX
 
 #include "c/base.hxx"
 #include "c/byte.hxx"
@@ -11,6 +11,6 @@
 #include "c/util.hxx"
 #include "c/wide.hxx"
 
-#endif//SON8_CALL_HXX
+#endif//SON8_C_HXX
 
 /*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
