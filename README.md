@@ -19,6 +19,10 @@ Functionality are separated in eight headers under **`son8::c`** namespace:
 
 **AND ALSO CONTAIN ONE `C`INGULAR** [**`<son8/c.hxx>`**](./include/son8/c.hxx) **to rule them `all`**
 
+## Testing
+
+Testing is performed on specialized organization [son8test](https://github.com/son8test/c_header) repository
+
 ## Versions
 
 - **`0.0.*`**: alpha versions, patches (all c from std namespace without any 
