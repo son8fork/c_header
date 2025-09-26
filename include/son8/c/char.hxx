@@ -1,13 +1,10 @@
-#pragma once
 #ifndef SON8_C_CHAR_HXX
 #define SON8_C_CHAR_HXX
-
 /*
     Character C related functionality
 */
-
-#include "base.hxx"
-
+#include <son8/c/base.hxx>
+// std headers
 #include <cctype>
 #include <cstring>
 
@@ -68,4 +65,4 @@ namespace son8::c {
 
 #endif//SON8_C_CHAR_HXX
 
-/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
+// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ

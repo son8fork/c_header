@@ -1,15 +1,12 @@
-#pragma once
 #ifndef SON8_C_BASE_HXX
 #define SON8_C_BASE_HXX
-
 /*
     Base C related functionality
 */
-
 #ifndef __cplusplus
 #error "son8::c_header library interface requires C++"
 #endif
-
+// std headers
 #include <cassert>
 #include <cinttypes>
 #include <climits>
@@ -64,4 +61,4 @@ namespace son8::c {
 
 #endif//SON8_C_BASE_HXX
 
-/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
+// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ

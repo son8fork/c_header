@@ -1,23 +1,19 @@
-#pragma once
 #ifndef SON8_C_MATH_HXX
 #define SON8_C_MATH_HXX
-
 /*
     Math C related functionality
 */
-
+#include <son8/c/base.hxx>
+// std headers
+#include <cfenv>
+#include <cfloat>
+#include <cmath>
 // GCC under ver 14 do not have some math funcs (l,f suffix) in std namespace
-#if defined(__GNUC__) && !defined(__clang__) && (__GNUC__ < 14)
+#if !defined(__clang__) && defined(__GNUC__) && (__GNUC__ < 14)
 #define SON8_C_HEADER_MATH_NAMESPACE_STD
 #else
 #define SON8_C_HEADER_MATH_NAMESPACE_STD std
 #endif
-
-#include "base.hxx"
-
-#include <cfenv>
-#include <cfloat>
-#include <cmath>
 
 namespace son8::c {
     // base.hxx->inttypes
@@ -302,10 +298,10 @@ namespace son8::c {
     using std::sph_neumannf;
     using std::sph_neumannl;
 #endif // __cpp_lib_math_special_functions
-    // -- C++20
+    // -- C++20 not supported, commenting out for completeness
     //using std::lerp;
 } // namespace son8::c
 
 #endif//SON8_C_MATH_HXX
 
-/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
+// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ

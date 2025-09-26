@@ -1,13 +1,10 @@
-#pragma once
 #ifndef SON8_C_FILE_HXX
 #define SON8_C_FILE_HXX
-
 /*
     File C related functionality
 */
-
-#include "base.hxx"
-
+#include <son8/c/base.hxx>
+// std headers
 #include <cstdio>
 
 namespace son8::c {
@@ -66,4 +63,4 @@ namespace son8::c {
 
 #endif//SON8_C_FILE_HXX
 
-/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
+// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ

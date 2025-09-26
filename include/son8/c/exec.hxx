@@ -1,13 +1,10 @@
-#pragma once
 #ifndef SON8_C_EXEC_HXX
 #define SON8_C_EXEC_HXX
-
 /*
     Execution C related functionality
 */
-
-#include "base.hxx"
-
+#include <son8/c/base.hxx>
+// std headers
 #include <cerrno>
 #include <csetjmp>
 #include <csignal>
@@ -33,4 +30,4 @@ namespace son8::c {
 
 #endif//SON8_C_EXEC_HXX
 
-/*ᦒ Ⓒ 2024 Oleg'Ease'Kharchuk ᦒ*/
+// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ
