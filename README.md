@@ -1,10 +1,10 @@
 # C_HEADER
 
-> C++ 17 interface library wrapper for standard C functions
+> C++17 interface library wrapper for standard C functions under namespace son8::c
 
 ## Description
 
-This project is simply a namespace wrapper for standard C functions for C++ 17.
+This project is simply a namespace wrapper for standard C functions for **C++17**.
 
 Functionality are separated in eight headers under **`son8::c`** namespace:
 
@@ -25,14 +25,14 @@ Testing is performed on specialized organization [son8test](https://github.com/s
 
 ## Versions
 
-- **`0.0.*`**: alpha versions, patches (all c from std namespace without any 
+- **`0.0.*`**: alpha versions, patches (all c from std namespace without any
 changes, except adding missing types or/and functions)
-- **`0.*.0`**: beta versions, small improvements (compiler problem fixes, 
+- **`0.*.0`**: beta versions, small improvements (compiler problem fixes,
 removing unsupported std functions)
-- **`*.0.0`**: stable versions, big changes (may be breaking changes, 
+- **`*.0.0`**: stable versions, big changes (may be breaking changes,
 renaming files or reorganizing functions)
 
-**`*` indicates 1 or above** 
+**`*` indicates 1 or above**
 
 ## Usage
 
@@ -44,10 +44,12 @@ One possible usage is to check if compiler supports all C++17 C functions
 under **std** namespace.
 
 For example:
-- gcc under 14 doesn't support some math `f,l` suffixed functions in std
+- gcc under 14 doesn't support some math `f,l` suffixed functions in **std** namespace
 
 - or msvc not supporting C++17 `aligned_alloc`.
 
+- or clang llvm does not support C++17 special math functions
+
 ## NOTES
 
-###### each folder MAY contain README with additional information
+###### each folder MAY contain README with additional materials

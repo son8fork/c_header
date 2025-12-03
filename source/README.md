@@ -4,4 +4,4 @@
 
 This is interface library so null source files.
 
-###### Everything other than source code should avoid this directory.
+###### Anything other than source code SHOULD avoid this folder
