@@ -2,6 +2,6 @@
 
 > Project Source Files
 
-This is interface library so null source files.
+This is interface library so no source files.
 
 ###### Anything other than source code SHOULD avoid this folder
