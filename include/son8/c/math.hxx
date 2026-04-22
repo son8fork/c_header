@@ -304,4 +304,8 @@ namespace son8::c {
 
 #endif//SON8_C_MATH_HXX
 
-// Ⓒ 2024-2025 Oleg'Ease'Kharchuk ᦒ
+// Apache License 2.0
+// NO WARRANTY OF ANY KIND see <http://www.apache.org/licenses/LICENSE-2.0>
+// SPDX-License-Identifier: Apache-2.0
+// lib: `c_header` C++17 Standard C Entities Namespace
+// Ⓒ Copyright (c) 2024-2026 Oleg'Ease'Kharchuk ᦒ
