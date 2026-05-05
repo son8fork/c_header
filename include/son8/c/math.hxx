@@ -4,10 +4,13 @@
     Math C related functionality
 */
 #include <son8/c/base.hxx>
-// std headers
+// std
 #include <cfenv>
-#include <cfloat>
+#include <cfloat> // IWYU pragma: keep
 #include <cmath>
+// -- depr-rm?
+// #include <ccomplex> // depr C++17, rm C++20
+// #include <ctgmath> // depr C++17, rm C++20
 // GCC under ver 14 do not have some math funcs (l,f suffix) in std namespace
 #if !defined(__clang__) && defined(__GNUC__) && (__GNUC__ < 14)
 #define SON8_C_HEADER_MATH_NAMESPACE_STD
@@ -16,38 +19,8 @@
 #endif
 
 namespace son8::c {
-    // base.hxx->inttypes
-    // -- C++11
-    using std::imaxabs;
-    using std::imaxdiv;
-    // base.hxx->stdlib
-    using std::div_t;
-    using std::ldiv_t;
-    using std::abs;
-    using std::div;
-    using std::labs;
-    using std::ldiv;
-    // -- C++11
-    using std::lldiv_t;
-    using std::llabs;
-    using std::lldiv;
-    // fenv
-    // -- C++11
-    using std::fenv_t;
-    using std::fexcept_t;
-    using std::fegetenv;
-    using std::fegetexceptflag;
-    using std::fegetround;
-    using std::feclearexcept;
-    using std::feholdexcept;
-    using std::feraiseexcept;
-    using std::fesetenv;
-    using std::fesetexceptflag;
-    using std::fesetround;
-    using std::fetestexcept;
-    using std::feupdateenv;
-    // math
-    using std::abs;
+    // C++03
+    // -- cmath
     using std::acos;
     using std::asin;
     using std::atan;
@@ -70,9 +43,32 @@ namespace son8::c {
     using std::sqrt;
     using std::tan;
     using std::tanh;
-    // -- C++11
-    using std::double_t;
-    using std::float_t;
+    // -- cstdlib<-base.hxx
+    using std::abs;
+    using std::div;
+    using std::div_t;
+    using std::labs;
+    using std::ldiv;
+    using std::ldiv_t;
+    // C++11
+    // -- cfenv
+    using std::fegetenv;
+    using std::fegetexceptflag;
+    using std::fegetround;
+    using std::feclearexcept;
+    using std::feholdexcept;
+    using std::fenv_t;
+    using std::feraiseexcept;
+    using std::fesetenv;
+    using std::fesetexceptflag;
+    using std::fesetround;
+    using std::fetestexcept;
+    using std::feupdateenv;
+    using std::fexcept_t;
+    // -- cinttypes<-base.hxx
+    using std::imaxabs;
+    using std::imaxdiv;
+    // -- cmath
     using SON8_C_HEADER_MATH_NAMESPACE_STD::acosf;
     using std::acosh;
     using std::acoshf;
@@ -102,11 +98,13 @@ namespace son8::c {
     using SON8_C_HEADER_MATH_NAMESPACE_STD::coshf;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::coshl;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::cosl;
+    using std::double_t;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::fabsf;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::fabsl;
     using std::fdim;
     using std::fdimf;
     using std::fdiml;
+    using std::float_t;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::floorf;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::floorl;
     using std::fma;
@@ -214,6 +212,9 @@ namespace son8::c {
     using std::scalbln;
     using std::scalblnf;
     using std::scalblnl;
+    using std::scalbn;
+    using std::scalbnf;
+    using std::scalbnl;
     using std::signbit;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::sinf;
     using SON8_C_HEADER_MATH_NAMESPACE_STD::sinhf;
@@ -231,7 +232,12 @@ namespace son8::c {
     using std::trunc;
     using std::truncf;
     using std::truncl;
-    // -- C++17
+    // -- cstdlib<-base.hxx
+    using std::llabs;
+    using std::lldiv;
+    using std::lldiv_t;
+    // C++17
+    // -- cmath
 // clang on macos (llvm) does not support math special functions in std (fully?)
 #if defined(__cpp_lib_math_special_functions) || !defined(__clang__)
     using std::assoc_laguerre;
@@ -298,8 +304,7 @@ namespace son8::c {
     using std::sph_neumannf;
     using std::sph_neumannl;
 #endif // __cpp_lib_math_special_functions
-    // -- C++20 not supported, commenting out for completeness
-    //using std::lerp;
+
 } // namespace son8::c
 
 #endif//SON8_C_MATH_HXX
